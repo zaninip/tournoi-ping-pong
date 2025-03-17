@@ -38,7 +38,7 @@ const TournoiPingPong = () => {
           { joueur1: "Jay", joueur2: "Aurélien", score: "3-11, 7-11", joue: true },
           { joueur1: "Yann", joueur2: "Edoh", score: "10-12, 6-11", joue: true },
           { joueur1: "Aurélien", joueur2: "Edoh", score: "11-6, 11-9", joue: true },
-          { joueur1: "Jay", joueur2: "Yann", score: "3-1, 7-11", joue: true },
+          { joueur1: "Jay", joueur2: "Yann", score: "3-11, 7-11", joue: true },
           { joueur1: "Jay", joueur2: "Edoh", score: "", joue: false },
           { joueur1: "Aurélien", joueur2: "Yann", score: "", joue: false }
         ]
