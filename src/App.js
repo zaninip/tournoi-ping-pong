@@ -27,7 +27,7 @@ const TournoiPingPong = () => {
           { joueur1: "David", joueur2: "Pierre-Yves", score: "", joue: false },
           { joueur1: "David", joueur2: "Riad", score: "", joue: false },
           { joueur1: "Pierre-Yves", joueur2: "Quentin", score: "", joue: false },
-          { joueur1: "David", joueur2: "Quentin", score: "", joue: false },
+          { joueur1: "David", joueur2: "Quentin", score: "11-8, 8-11, 11-7", joue: true },
           { joueur1: "Pierre-Yves", joueur2: "Riad", score: "", joue: false }
         ]
       },
@@ -38,7 +38,7 @@ const TournoiPingPong = () => {
           { joueur1: "Jay", joueur2: "Aurélien", score: "3-11, 7-11", joue: true },
           { joueur1: "Yann", joueur2: "Edoh", score: "10-12, 6-11", joue: true },
           { joueur1: "Aurélien", joueur2: "Edoh", score: "11-6, 11-9", joue: true },
-          { joueur1: "Jay", joueur2: "Yann", score: "", joue: false },
+          { joueur1: "Jay", joueur2: "Yann", score: "3-1, 7-11", joue: true },
           { joueur1: "Jay", joueur2: "Edoh", score: "", joue: false },
           { joueur1: "Aurélien", joueur2: "Yann", score: "", joue: false }
         ]
@@ -51,8 +51,8 @@ const TournoiPingPong = () => {
           { joueur1: "Benjamin", joueur2: "Séverine", score: "11-2, 11-5", joue: true },
           { joueur1: "Benjamin", joueur2: "Mehdi", score: "11-1, 11-2", joue: true },
           { joueur1: "Emilie", joueur2: "Séverine", score: "", joue: false },
-          { joueur1: "Emilie", joueur2: "Benjamin", score: "", joue: false },
-          { joueur1: "Emilie", joueur2: "Mehdi", score: "", joue: false }
+          { joueur1: "Emilie", joueur2: "Benjamin", score: "7-11, 8-11", joue: true },
+          { joueur1: "Emilie", joueur2: "Mehdi", score: "11-6, 11-9", joue: true }
         ]
       }
     ]
