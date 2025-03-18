@@ -15,7 +15,7 @@ const TournoiPingPong = () => {
           { joueur1: "Gilles", joueur2: "Michael", score: "11-9, 11-6", joue: true },
           { joueur1: "Michael", joueur2: "Paolo", score: "7-11, 8-11", joue: true },
           { joueur1: "Michael", joueur2: "Anthony", score: "11-3, 11-8", joue: true },
-          { joueur1: "Anthony", joueur2: "Gilles", score: "11-6, 11-5", joue: false },
+          { joueur1: "Anthony", joueur2: "Gilles", score: "6-11, 5-11", joue: true },
           { joueur1: "Paolo", joueur2: "Gilles", score: "11-9, 8-11, 6-11", joue: true }
         ]
       },
@@ -185,7 +185,7 @@ const TournoiPingPong = () => {
     if (activeTab === 'resultats') {
       return (
         <div key={pouleIndex} className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-          <div className="bg-purple-600 text-white p-3">
+          <div className="bg-blue-600 text-white p-3">
             <h2 className="text-xl font-semibold">{poule.nom}</h2>
           </div>
           
@@ -240,7 +240,7 @@ const TournoiPingPong = () => {
       
       return (
         <div key={pouleIndex} className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-          <div className="bg-purple-600 text-white p-3">
+          <div className="bg-blue-600 text-white p-3">
             <h2 className="text-xl font-semibold">{poule.nom}</h2>
           </div>
           
@@ -287,19 +287,19 @@ const TournoiPingPong = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      <header className="bg-purple-600 text-white p-4 shadow-md">
+      <header className="bg-blue-600 text-white p-4 shadow-md">
         <h1 className="text-2xl font-bold text-center">{tournoi.nom}</h1>
       </header>
       
       <div className="flex border-b border-gray-200 bg-white">
         <button
-          className={`py-4 px-6 font-medium ${activeTab === 'resultats' ? 'text-purple-600 border-b-2 border-purple-600' : 'text-gray-500 hover:text-purple-500'}`}
+          className={`py-4 px-6 font-medium ${activeTab === 'resultats' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-blue-500'}`}
           onClick={() => setActiveTab('resultats')}
         >
           Résultats
         </button>
         <button
-          className={`py-4 px-6 font-medium ${activeTab === 'classements' ? 'text-purple-600 border-b-2 border-purple-600' : 'text-gray-500 hover:text-purple-500'}`}
+          className={`py-4 px-6 font-medium ${activeTab === 'classements' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-blue-500'}`}
           onClick={() => setActiveTab('classements')}
         >
           Classements
