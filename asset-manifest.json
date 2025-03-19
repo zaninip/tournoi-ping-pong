@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tournoi-ping-pong/static/css/main.d0b6a1be.css",
-    "main.js": "/tournoi-ping-pong/static/js/main.18ef1c52.js",
+    "main.js": "/tournoi-ping-pong/static/js/main.7d119c1e.js",
     "static/js/453.f6ad92d6.chunk.js": "/tournoi-ping-pong/static/js/453.f6ad92d6.chunk.js",
     "index.html": "/tournoi-ping-pong/index.html",
     "main.d0b6a1be.css.map": "/tournoi-ping-pong/static/css/main.d0b6a1be.css.map",
-    "main.18ef1c52.js.map": "/tournoi-ping-pong/static/js/main.18ef1c52.js.map",
+    "main.7d119c1e.js.map": "/tournoi-ping-pong/static/js/main.7d119c1e.js.map",
     "453.f6ad92d6.chunk.js.map": "/tournoi-ping-pong/static/js/453.f6ad92d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0b6a1be.css",
-    "static/js/main.18ef1c52.js"
+    "static/js/main.7d119c1e.js"
   ]
 }
