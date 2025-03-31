@@ -59,14 +59,14 @@ const TournoiPingPong = () => {
     tableauPrincipal: {
       nom: "Tableau Principal",
       quarts: [
-        { id: "Q1", joueur1: "Gilles", joueur2: "Quentin", score: "", joue: false },
+        { id: "Q1", joueur1: "Gilles", joueur2: "Quentin", score: "11-4, 11-3, 11-8", joue: true },
         { id: "Q2", joueur1: "Yann", joueur2: "Emilie", score: "", joue: false },
-        { id: "Q3", joueur1: "David", joueur2: "Paolo", score: "", joue: false },
-        { id: "Q4", joueur1: "Benjamin", joueur2: "Aurélien", score: "", joue: false }
+        { id: "Q3", joueur1: "David", joueur2: "Paolo", score: "6-11, 7-11, 6-11", joue: true },
+        { id: "Q4", joueur1: "Benjamin", joueur2: "Aurélien", score: "8-11, 10-12, 11-6, 11-8, 13-11", joue: true }
       ],
       demis: [
-        { id: "D1", joueur1: "Gagnant Q1", joueur2: "Gagnant Q2", score: "", joue: false },
-        { id: "D2", joueur1: "Gagnant Q3", joueur2: "Gagnant Q4", score: "", joue: false }
+        { id: "D1", joueur1: "Gilles", joueur2: "Gagnant Q2", score: "", joue: false },
+        { id: "D2", joueur1: "Paolo", joueur2: "Benjamin", score: "", joue: false }
       ],
       finale: { id: "F", joueur1: "Gagnant D1", joueur2: "Gagnant D2", score: "", joue: false }
     },
@@ -74,12 +74,12 @@ const TournoiPingPong = () => {
       nom: "Tableau Consolante",
       quarts: [
         { id: "QC1", joueur1: "Michael", joueur2: "Riad", score: "", joue: false },
-        { id: "QC2", joueur1: "Edoh", joueur2: "Séverine", score: "", joue: false },
+        { id: "QC2", joueur1: "Edoh", joueur2: "Séverine", score: "11-1, 11-7, 9-11, 11-8", joue: true },
         { id: "QC3", joueur1: "Pierre-Yves", joueur2: "Anthony", score: "", joue: false },
         { id: "QC4", joueur1: "Mehdi", joueur2: "Jay", score: "", joue: false }
       ],
       demis: [
-        { id: "DC1", joueur1: "Gagnant QC1", joueur2: "Gagnant QC2", score: "", joue: false },
+        { id: "DC1", joueur1: "Gagnant QC1", joueur2: "Edoh", score: "", joue: false },
         { id: "DC2", joueur1: "Gagnant QC3", joueur2: "Gagnant QC4", score: "", joue: false }
       ],
       finale: { id: "FC", joueur1: "Gagnant DC1", joueur2: "Gagnant DC2", score: "", joue: false }
@@ -224,33 +224,6 @@ const TournoiPingPong = () => {
     });
     
     return classement;
-  };
-
-  // Fonction pour mettre à jour un match avec un score
-  const updateMatch = (type, phase, index, score) => {
-    if (type === 'principal') {
-      if (phase === 'quart') {
-        tournoi.tableauPrincipal.quarts[index].score = score;
-        tournoi.tableauPrincipal.quarts[index].joue = true;
-      } else if (phase === 'demi') {
-        tournoi.tableauPrincipal.demis[index].score = score;
-        tournoi.tableauPrincipal.demis[index].joue = true;
-      } else if (phase === 'finale') {
-        tournoi.tableauPrincipal.finale.score = score;
-        tournoi.tableauPrincipal.finale.joue = true;
-      }
-    } else if (type === 'consolante') {
-      if (phase === 'quart') {
-        tournoi.tableauConsolante.quarts[index].score = score;
-        tournoi.tableauConsolante.quarts[index].joue = true;
-      } else if (phase === 'demi') {
-        tournoi.tableauConsolante.demis[index].score = score;
-        tournoi.tableauConsolante.demis[index].joue = true;
-      } else if (phase === 'finale') {
-        tournoi.tableauConsolante.finale.score = score;
-        tournoi.tableauConsolante.finale.joue = true;
-      }
-    }
   };
 
   // Fonction pour rendre un tableau éliminatoire (principal ou consolante)
