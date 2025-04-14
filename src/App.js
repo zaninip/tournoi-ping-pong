@@ -60,29 +60,29 @@ const TournoiPingPong = () => {
       nom: "Tableau Principal",
       quarts: [
         { id: "Q1", joueur1: "Gilles", joueur2: "Quentin", score: "11-4, 11-3, 11-8", joue: true },
-        { id: "Q2", joueur1: "Yann", joueur2: "Emilie", score: "", joue: false },
+        { id: "Q2", joueur1: "Yann", joueur2: "Emilie", score: "11-6, 11-9, 15-13", joue: true },
         { id: "Q3", joueur1: "David", joueur2: "Paolo", score: "6-11, 7-11, 6-11", joue: true },
         { id: "Q4", joueur1: "Benjamin", joueur2: "Aurélien", score: "8-11, 10-12, 11-6, 11-8, 13-11", joue: true }
       ],
       demis: [
-        { id: "D1", joueur1: "Gilles", joueur2: "Gagnant Q2", score: "", joue: false },
-        { id: "D2", joueur1: "Paolo", joueur2: "Benjamin", score: "", joue: false }
+        { id: "D1", joueur1: "Gilles", joueur2: "Yann", score: "11-6, 11-7, 11-9", joue: true },
+        { id: "D2", joueur1: "Paolo", joueur2: "Benjamin", score: "11-4, 11-6, 11-9", joue: true }
       ],
-      finale: { id: "F", joueur1: "Gagnant D1", joueur2: "Gagnant D2", score: "", joue: false }
+      finale: { id: "F", joueur1: "Gilles", joueur2: "Paolo", score: "", joue: false }
     },
     tableauConsolante: {
       nom: "Tableau Consolante",
       quarts: [
-        { id: "QC1", joueur1: "Michael", joueur2: "Riad", score: "", joue: false },
+        { id: "QC1", joueur1: "Michael", joueur2: "Riad", score: "11-0, 11-2, 11-4", joue: true },
         { id: "QC2", joueur1: "Edoh", joueur2: "Séverine", score: "11-1, 11-7, 9-11, 11-8", joue: true },
-        { id: "QC3", joueur1: "Pierre-Yves", joueur2: "Anthony", score: "", joue: false },
-        { id: "QC4", joueur1: "Mehdi", joueur2: "Jay", score: "", joue: false }
+        { id: "QC3", joueur1: "Pierre-Yves", joueur2: "Anthony", score: "6-11, 7-11, 7-11", joue: true },
+        { id: "QC4", joueur1: "Mehdi", joueur2: "Jay", score: "11-8, 11-6, 11-6", joue: true }
       ],
       demis: [
-        { id: "DC1", joueur1: "Gagnant QC1", joueur2: "Edoh", score: "", joue: false },
-        { id: "DC2", joueur1: "Gagnant QC3", joueur2: "Gagnant QC4", score: "", joue: false }
+        { id: "DC1", joueur1: "Michael", joueur2: "Edoh", score: "11-5, 11-5, 11-5", joue: true },
+        { id: "DC2", joueur1: "Antonhy", joueur2: "Mehdi", score: "11-5, 11-5, 11-7", joue: true }
       ],
-      finale: { id: "FC", joueur1: "Gagnant DC1", joueur2: "Gagnant DC2", score: "", joue: false }
+      finale: { id: "FC", joueur1: "Michael", joueur2: "Anthony", score: "", joue: false }
     }
   };
 
