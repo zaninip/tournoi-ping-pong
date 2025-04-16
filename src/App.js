@@ -68,7 +68,7 @@ const TournoiPingPong = () => {
         { id: "D1", joueur1: "Gilles", joueur2: "Yann", score: "11-6, 11-7, 11-9", joue: true },
         { id: "D2", joueur1: "Paolo", joueur2: "Benjamin", score: "11-4, 11-6, 11-9", joue: true }
       ],
-      finale: { id: "F", joueur1: "Gilles", joueur2: "Paolo", score: "", joue: false }
+      finale: { id: "F", joueur1: "Gilles", joueur2: "Paolo", score: "11-8, 13-11, 11-7", joue: true }
     },
     tableauConsolante: {
       nom: "Tableau Consolante",
@@ -82,7 +82,7 @@ const TournoiPingPong = () => {
         { id: "DC1", joueur1: "Michael", joueur2: "Edoh", score: "11-5, 11-5, 11-5", joue: true },
         { id: "DC2", joueur1: "Antonhy", joueur2: "Mehdi", score: "11-5, 11-5, 11-7", joue: true }
       ],
-      finale: { id: "FC", joueur1: "Michael", joueur2: "Anthony", score: "", joue: false }
+      finale: { id: "FC", joueur1: "Michael", joueur2: "Anthony", score: "9-11, 11-9, 11-9, 9-11, 11-9", joue: true }
     }
   };
 
